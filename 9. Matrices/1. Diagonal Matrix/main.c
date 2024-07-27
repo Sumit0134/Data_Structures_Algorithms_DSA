@@ -19,7 +19,7 @@ int main()
     }
     else
     {
-        printf("Enter total of n diagonal elements for a diagonal matrix: ");
+        printf("Enter total of %d diagonal elements for a diagonal matrix: ", n);
         for(int i=0; i<n; i++)
         {
             scanf("%d", &A[i]);

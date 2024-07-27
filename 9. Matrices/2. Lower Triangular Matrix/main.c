@@ -21,7 +21,7 @@ int main()
     int s=(n*(n+1))/2;
     int A[s], k;
 
-    printf("Enter total of s elements for a lower triangular matrix:\n");
+    printf("Enter total of %d elements for a lower triangular matrix:\n", s);
     for(k=0; k<s; k++)
     {
         scanf("%d", &A[k]);

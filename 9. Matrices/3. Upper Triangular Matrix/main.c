@@ -19,7 +19,7 @@ int main()
     s=(n*(n+1))/2;
     int A[s], k=0;
 
-    printf("Enter total of s matrix elements for a upper triangular matrix: ");
+    printf("Enter total of %d matrix elements for a upper triangular matrix: ", s);
     for(int i=0; i<s; i++)
     {
         scanf("%d", &A[i]);
