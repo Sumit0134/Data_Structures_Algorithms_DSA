@@ -20,7 +20,7 @@ int main()
     int option;
     printf("Enter the choice:\n");
     printf("1. Representation using lower triangular elements\n");
-    printf("2. Representation using upper triangular elements.\n\n");
+    printf("2. Representation using upper triangular elements.\n");
     scanf("%d", &option);
 
     if(option!=1 && option!=2)
