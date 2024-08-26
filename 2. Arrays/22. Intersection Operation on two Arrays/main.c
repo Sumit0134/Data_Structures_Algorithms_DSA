@@ -37,32 +37,29 @@ void Display(struct Array arr)
     printf("\n");
 }
 
-void Merge(struct Array *arr1, struct Array *arr2)
+void Intersection(struct Array *arr1, struct Array *arr2)
 {
     int arr3[arr1->length+arr2->length], i=0, j=0, k=0;
     while(i<arr1->length && j<arr2->length)
     {
         if(arr1->A[i]<arr2->A[j])
         {
-            arr3[k++]=arr1->A[i++];
+            i++;
+        }
+        else if(arr1->A[i]>arr2->A[j])
+        {
+            j++;
         }
         else
         {
-            arr3[k++]=arr2->A[j++];
+            arr3[k++]=arr1->A[i++];
+            j++;
         }
     }
-    for(; i<arr1->length; i++)
+    printf("After performing Intersection operation, the elements of an array is: ");
+    for(int l=0; l<k; l++)
     {
-        arr3[k++]=arr1->A[i];
-    }
-    for(; j<arr2->length; j++)
-    {
-        arr3[k++]=arr2->A[j];
-    }
-    printf("After merging, the elements of an array is: ");
-    for(k=0; k<arr1->length+arr2->length; k++)
-    {
-        printf("%d ", arr3[k]);
+        printf("%d ", arr3[l]);
     }
 }
 
@@ -77,5 +74,6 @@ int main()
     Display(arr1);
     printf("The elements of the second array is: ");
     Display(arr2);
-    Merge(&arr1, &arr2);
+    Intersection(&arr1, &arr2);
 }
+
