@@ -2,8 +2,6 @@
 
 This repository focuses on key Data Structures and Algorithms (DSA) concepts including **Array**, **Recursion**, **Matrices**, and **Stacks**. It serves as a guide to help you understand and implement these fundamental DSA techniques in an efficient way. 🚀
 
-🔗 Access the full DSA guide here: [DSA & Algorithms](https://example-link.com)
-
 ## 📋 Topics Covered
 
 ### 1. Arrays 🧮
